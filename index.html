@@ -1,0 +1,198 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Porfolio Page</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/portfoliStyling.css" />
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />  
+    </head>
+  <body> 
+    <!-- Nav bar start -->
+    <header>
+      <div class="container">
+        <h1 class="logo">My Portfolio</h1>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger" onclick="toggleBar();">&#9776;</div>
+      </div>
+    </header>
+    <!--Nav bar end  -->
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h4>I'm</h4>
+                <h1>Sekooni Ayodeji King.</h1>
+                <h3>Software Developer</h3>
+            </div>
+            <div class="home-image">
+                <img src="images/profile.png" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+     <section class="services" id="services">
+        <div class="container">
+           <h2 class="section-title">WHAT I DO</h2>
+            <h3 class="section-subtitle">Awesome Quality Services</h3>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <div class="texts">
+                        <h4>Web Design</h4>
+                        <p>I design clean, responsive websites using HTML, CSS, and JavaScript to create engaging user experiences.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-brands fa-python"></i>
+                    <div class="texts">
+                        <h4>Python</h4>
+                        <p>I build dynamic web apps and APIs using Python frameworks like Django and Flask.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <div class="texts">
+                        <h4>Web Development</h4>
+                        <p>I build responsive, high-performance websites using HTML, CSS, JavaScript, and modern development best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- About Section -->
+     <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">LEARN ABOUT ME</h2>
+                <h3 class="section-subtitle">1 Years Experience</h3>
+                <p>I'm a creative and detail-oriented web designer and developer with a strong focus on building clean, responsive, and user-friendly digital experiences. I specialize in front-end technologies like HTML, CSS, and JavaScript, and I also  work with Python for scripting, automation, and backend logic, constantly expanding my skill set to become a well-rounded developer. Passionate about learning and growth, I'm always exploring new tools and best practices to deliver impactful and accessible web solutions.</p>
+                <a href="images/Resume- Sekooni Ayodeji King..docx"><button class="btn">Download CV</button></a>
+            </div>
+            <div class="about-skills">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <h4>90%</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <h4>70%</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Javascript</h3>
+                    <h4>65%</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <h4>60%</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+        </div>
+     </section>
+
+     <!-- Experience section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">MY RESUME</h2>
+            <h3 class="section-subtitle">Working Experience</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h4>Web Developer</h4>
+                        <h5>Sabi programmers, Akure , Ondo state.</h5>
+                        <p>I interned as a web developer at sabi programmers for the duration of 6 months.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="project">
+        <div class="container">
+            <h2 class="section-title">My Past Projects</h2>
+            <h3 class="section-subtitle">Gallery Of My Past Projects</h3>
+            
+            <div class="project-grid">
+                <div class="project-item">
+                    <a href="https://group1-school-management-website.vercel.app/#1" target="_blank"><img src="images/school.png" alt="Project 1"></a>
+                    <div class="project-overlay">
+                        <h4>School Management </h4>
+                        <i class="fa-regular fa-plus"></i>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://registration-page-git-main-kings-projects-245a3a0f.vercel.app/" target="_blank"><img src="images/reg.jpg" alt="Project 2"></a>
+                    <div class="project-overlay">
+                        <h4>Registration Page</h4>
+                        <i class="fa-regular fa-plus"></i>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://registration-page-7bsz.vercel.app/" target="_blank"><img src="images/insta.jpg" alt="Project 3"></a>
+                    <div class="project-overlay">
+                        <h4>Instagram Homepage </h4>
+                        <i class="fa-regular fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+            <div class="social-links">
+                <p>Email : sekooniking@gmail.com</p>
+                <a href="https://x.com/SekooniKing?t=1hCJYEQ--2OwAw43fh4csw&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ayodeji-sekooni-b1884b315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/kizzy_theking?igsh=MzJneW5lZTcxYjVx"><i class="fab fa-instagram"></i></a>
+                <a href="wa.me/2348107310122"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Custom Javascript -->
+    <script src="js/porfolioJs.js"></script>
+  </body>
+</html>
