@@ -72,6 +72,8 @@ header:not(.sticky) .logo {
     color: white;
 }
 
+
+
 /*  home section */
 .home {
     padding: 180px 0 100px;
@@ -156,7 +158,9 @@ header:not(.sticky) .logo {
     max-width: 100%;
     
 }
-
+.hamburger{
+    display: none;
+}
 /* Services Section */
 .services {
     padding: 100px 0;
@@ -420,6 +424,11 @@ footer .container {
 @media (max-width: 768px) {
   .header-section {
     padding: 10px;
+  }
+  .hamburger{
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
   }
   .nav-links {
       display: none;
